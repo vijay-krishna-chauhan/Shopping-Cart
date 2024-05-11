@@ -5,8 +5,8 @@ import CartItem from '../components/CartItem';
 
 const Cart = () => {
   const {cart}=useSelector((state)=>state);
-  console.log("Printing Cart");
-  console.log(cart);
+  // console.log("Printing Cart");
+  // console.log(cart);
   const [totalAmount,setTotalAmount]=useState(0);
   useEffect(()=>{
     setTotalAmount(cart.reduce((acc, curr)=>acc+ curr.price,0));
